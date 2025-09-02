@@ -1,5 +1,5 @@
 # Course status
 
-[Current working point](https://learn.udacity.com/nd1310?version=2.0.4&partKey=cd13281&lessonKey=d7b5fe67-2140-475c-b4d4-a7dfebe9c2e5&conceptKey=85d76db6-5b86-4981-a3f3-8c41e0e08b67)
+[Current working point](https://learn.udacity.com/nd1310?version=2.0.5&partKey=cd13281&lessonKey=20fc974f-a96e-4628-8536-8db272a9eabe&conceptKey=c1cc2ad3-782c-4ed0-86c1-c27f123015b4)
 
-Next read link topic: https://coinmarketcap.com/academy/glossary/hardware-wallet
+Next read link topic: https://corpgov.law.harvard.edu/2018/05/26/an-introduction-to-smart-contracts-and-their-potential-and-inherent-limitations/
