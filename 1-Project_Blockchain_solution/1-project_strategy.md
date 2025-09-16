@@ -188,4 +188,40 @@ provide title insurance to protect buyers and lenders from future ownership issu
 
 [Notaries and Legal Professionals](https://www.nationalnotary.org/knowledge-center/about-notaries/what-is-a-notary-public)
 
+**What are Notaries and Legal Professionals?**
+
+Notaries are authorized officials who verify the identity of parties, witness
+signatures, and certify documents.
+Legal professionals (lawyers, solicitors) provide legal advice, draft contracts,
+and ensure compliance with laws.
+
+**How they work:**
+
+Notaries confirm identities and witness the signing of documents to prevent fraud.
+Legal professionals review contracts, advise clients, and handle disputes.
+Both ensure that transactions meet legal requirements and are properly documented.
+
+**Strong Points:**
+
+Help prevent fraud and ensure legal validity of documents.
+Provide expert advice and protect client interests.
+Ensure compliance with complex regulations.
+
+**Weak Points / Problems:**
+
+Services can be expensive, adding to transaction costs.
+Manual processes can slow down transactions.
+Errors or oversights may still occur.
+Reliance on centralized trust in individuals or firms.
+
+#### **Banks and Mortgage Lenders:**
+
+[Banks and Mortgage Lenders](Certainly! Here are alternative reputable sources for information about banks and mortgage lenders in real estate transactions:
+
+[How Mortgages Work](https://europa.eu/youreurope/citizens/consumers/financial-products-and-services/mortgages/index_en.htm) (TBR)
+[Mortgage types](https://www.bankrate.com/mortgages/mortgage-basics/) (TBR)
+[Understanding the Mortgage Process (The Mortgage Reports)](https://www.investopedia.com/mortgage-process-explained-5213694) (TBR)
+
+TBD
+
 ### **2. Explain how a blockchain-based implementation could provide improvements (TBD)**
