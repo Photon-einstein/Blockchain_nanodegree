@@ -190,38 +190,71 @@ provide title insurance to protect buyers and lenders from future ownership issu
 
 **What are Notaries and Legal Professionals?**
 
-Notaries are authorized officials who verify the identity of parties, witness
-signatures, and certify documents.
-Legal professionals (lawyers, solicitors) provide legal advice, draft contracts,
+Notaries are authorized officials who verify the identity of parties, witness  
+signatures, and certify documents.  
+Legal professionals (lawyers, solicitors) provide legal advice, draft contracts,  
 and ensure compliance with laws.
 
 **How they work:**
 
-Notaries confirm identities and witness the signing of documents to prevent fraud.
-Legal professionals review contracts, advise clients, and handle disputes.
+Notaries confirm identities and witness the signing of documents to prevent fraud.  
+Legal professionals review contracts, advise clients, and handle disputes.  
 Both ensure that transactions meet legal requirements and are properly documented.
 
 **Strong Points:**
 
-Help prevent fraud and ensure legal validity of documents.
-Provide expert advice and protect client interests.
+Help prevent fraud and ensure legal validity of documents.  
+Provide expert advice and protect client interests.  
 Ensure compliance with complex regulations.
 
 **Weak Points / Problems:**
 
-Services can be expensive, adding to transaction costs.
-Manual processes can slow down transactions.
-Errors or oversights may still occur.
+Services can be expensive, adding to transaction costs.  
+Manual processes can slow down transactions.  
+Errors or oversights may still occur.  
 Reliance on centralized trust in individuals or firms.
 
 #### **Banks and Mortgage Lenders:**
 
-[Banks and Mortgage Lenders](Certainly! Here are alternative reputable sources for information about banks and mortgage lenders in real estate transactions:
+[How Mortgages Work](https://europa.eu/youreurope/citizens/consumers/financial-products-and-services/mortgages/index_en.htm) (Done)
+[Mortgage overview](https://www.investopedia.com/terms/m/mortgage.asp) (Done)
+[Understanding the Mortgage Process (The Mortgage Reports)](https://www.investopedia.com/mortgage-process-explained-5213694) (Done)
 
-[How Mortgages Work](https://europa.eu/youreurope/citizens/consumers/financial-products-and-services/mortgages/index_en.htm) (TBR)
-[Mortgage types](https://www.bankrate.com/mortgages/mortgage-basics/) (TBR)
-[Understanding the Mortgage Process (The Mortgage Reports)](https://www.investopedia.com/mortgage-process-explained-5213694) (TBR)
+**What are Banks and Mortgage Lenders?**  
+Banks and mortgage lenders are financial institutions that provide  
+loans to buyers for purchasing real estate. They assess  
+creditworthiness, offer financing options, and manage payments  
+over the life of the loan.
 
-TBD
+**How they work:**
+
+Buyers apply for a mortgage loan.  
+The lender evaluates the buyer’s financial status and property value.  
+If approved, the lender provides funds to purchase the property.  
+The buyer repays the loan over time, usually with interest.  
+The lender holds a lien on the property until the loan is paid off.
+
+**Strong Points:**
+
+Enable buyers to purchase property without needing full upfront payment.  
+Offer various loan products to suit different needs.  
+Provide financial expertise and regulatory compliance.
+
+**Weak Points / Problems:**
+
+Lengthy approval processes and extensive paperwork.  
+Interest payments and fees increase overall costs.  
+Strict requirements can exclude some buyers.  
+Centralized control and risk of foreclosure if payments are missed.
+
+#### **Government Registries:**
+
+[Understanding Property Deeds](https://www.investopedia.com/articles/realestate/12/property-deeds-and-real-property.asp#:~:text=A%20property%20deed%20is%20a,the%20party%20transferring%20the%20property.) (TBR)
+
+[Guidance for members of the public in UK](https://www.gov.uk/guidance/guidance-for-members-of-the-public) (TBR)
+
+[World Bank Page](https://www.worldbank.org/en/topic/land/overview) (TBR)
+
+[Land Records Management System Using GIS Technology](https://www.cyberswift.com/blog/land-records-management-system-using-gis-technology/) (TBR)
 
 ### **2. Explain how a blockchain-based implementation could provide improvements (TBD)**
