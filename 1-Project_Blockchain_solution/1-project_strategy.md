@@ -249,9 +249,9 @@ Centralized control and risk of foreclosure if payments are missed.
 
 #### **Government Registries:**
 
-[Understanding Property Deeds](https://www.investopedia.com/articles/realestate/12/property-deeds-and-real-property.asp#:~:text=A%20property%20deed%20is%20a,the%20party%20transferring%20the%20property.) (TBR)
+[Understanding Property Deeds](https://www.investopedia.com/articles/realestate/12/property-deeds-and-real-property.asp#:~:text=A%20property%20deed%20is%20a,the%20party%20transferring%20the%20property.) (Done)
 
-[Guidance for members of the public in UK](https://www.gov.uk/guidance/guidance-for-members-of-the-public) (TBR)
+[Guidance for members of the public in UK](https://www.gov.uk/guidance/guidance-for-members-of-the-public) (in progress)
 
 [World Bank Page](https://www.worldbank.org/en/topic/land/overview) (TBR)
 
