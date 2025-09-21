@@ -249,12 +249,200 @@ Centralized control and risk of foreclosure if payments are missed.
 
 #### **Government Registries:**
 
-[Understanding Property Deeds](https://www.investopedia.com/articles/realestate/12/property-deeds-and-real-property.asp#:~:text=A%20property%20deed%20is%20a,the%20party%20transferring%20the%20property.) (TBR)
+[Understanding Property Deeds](https://www.investopedia.com/articles/realestate/12/property-deeds-and-real-property.asp#:~:text=A%20property%20deed%20is%20a,the%20party%20transferring%20the%20property.) (Done)
 
-[Guidance for members of the public in UK](https://www.gov.uk/guidance/guidance-for-members-of-the-public) (TBR)
+[Guidance for members of the public in UK](https://www.gov.uk/guidance/guidance-for-members-of-the-public) (Done)
 
-[World Bank Page](https://www.worldbank.org/en/topic/land/overview) (TBR)
+[World Bank Page](https://www.worldbank.org/en/topic/land/overview) (Done)
 
-[Land Records Management System Using GIS Technology](https://www.cyberswift.com/blog/land-records-management-system-using-gis-technology/) (TBR)
+[Land Records Management System Using GIS Technology](https://www.cyberswift.com/blog/land-records-management-system-using-gis-technology/) (Done)
+
+**What are Government Registries?**
+Government registries are official databases maintained by local or national authorities  
+to record property ownership, transfers, and related legal documents. They ensure legal  
+recognition and public record of property rights.
+
+**How they work:**
+Property deeds and ownership details are submitted to the registry office.  
+Officials verify documents and update records to reflect new ownership or changes.  
+Registries provide public access to property records, supporting transparency and legal  
+protection.
+
+**Strong Points:**
+Legal recognition and protection of property rights.  
+Public access to ownership records increases transparency.  
+Helps prevent disputes over property ownership.
+
+**Weak Points/Problems:**
+Manual processes can be slow and prone to errors.  
+Records may be fragmented across different jurisdictions.  
+Risk of fraud or tampering if security is weak.  
+Centralized control can lead to bureaucratic delays and limited accessibility.
 
 ### **2. Explain how a blockchain-based implementation could provide improvements (TBD)**
+
+A blockchain-based implementation could provide several improvements to real estate transactions:
+
+- **Transparency**: All transaction records are stored on a public or permissioned ledger,  
+  making ownership history and transfers easily auditable and reducing fraud.
+
+* **Efficiency**: Smart contracts automate processes like payments, escrow, and title transfers,  
+  reducing paperwork and speeding up transactions.
+
+* **Cost Reduction**: By minimizing intermediaries (agents, escrow, title companies), blockchain  
+  can lower fees and administrative costs.
+
+* **Security**: Cryptographic verification and decentralized storage protect against tampering  
+  and unauthorized changes.
+
+* **Accessibility**: Parties can access records and verify ownership instantly, even across  
+  jurisdictions.
+
+* **Immutability**: Once recorded, transaction data cannot be altered, ensuring a reliable and  
+  permanent record.
+
+Overall, blockchain can make real estate transactions faster, safer, and more cost-effective  
+compared to traditional systems.
+
+### **2. Proposed Solution and Architecture**
+
+#### Analysis of Potential Blockchain Platforms
+
+**1. Ethereum**
+
+- **Consensus Approach:** Proof of Stake (PoS)
+- **Technical Attributes:**
+  - Supports smart contracts for automating payments, escrow, and title transfers
+  - Public ledger for transparency
+  - Tokenization standards (ERC-721, ERC-1155) for representing property ownership
+  - Large developer ecosystem
+- **Suitability:** Well-suited for automating transactions and transparent ownership records, but scalability and transaction costs can be concerns.
+
+**2. Hyperledger Fabric**
+
+- **Consensus Approach:** Pluggable consensus (e.g., Raft, Kafka)
+- **Technical Attributes:**
+  - Permissioned blockchain for privacy and regulatory compliance
+  - Modular architecture and private channels for confidential transactions
+  - Chaincode (smart contracts) in Go, Java, or Node.js
+  - High throughput and low latency
+- **Suitability:** Ideal for enterprise and government use cases where privacy and compliance are critical.
+
+**3. Polygon**
+
+- **Consensus Approach:** Proof of Stake (PoS)
+- **Technical Attributes:**
+  - Layer 2 scaling solution for Ethereum
+  - Fast, low-cost transactions
+  - Supports Ethereum-compatible smart contracts
+  - Bridges for interoperability with Ethereum
+- **Suitability:** Good for scalable, cost-effective applications such as high-volume property listings.
+
+| Platform           | Consensus | Smart Contracts | Privacy | Scalability | Cost   | Suitability              |
+| ------------------ | --------- | --------------- | ------- | ----------- | ------ | ------------------------ |
+| Ethereum           | PoS       | Yes             | Public  | Medium      | Medium | Tokenization, automation |
+| Hyperledger Fabric | Pluggable | Yes             | Private | High        | Low    | Enterprise, compliance   |
+| Polygon            | PoS       | Yes             | Public  | High        | Low    | Scalable, low-cost apps  |
+
+#### Selected Blockchain Platform and Justification
+
+**Recommended Platform: Hyperledger Fabric**
+
+**Justification:**  
+Hyperledger Fabric is the most appropriate platform for real estate transactions due to its permissioned  
+architecture, which ensures privacy and regulatory compliance—key requirements in property dealings.  
+Its modular design allows for private channels, enabling confidential transactions between parties  
+(e.g., buyers, sellers, banks, government registries). Fabric supports high throughput and low latency,  
+making it suitable for processing multiple transactions efficiently. Smart contracts (Chaincode) can  
+automate escrow, title transfer, and payment processes, reducing manual paperwork and errors.  
+The platform’s flexibility and enterprise focus make it ideal for integrating with existing systems  
+used by real estate agencies, banks, and government registries, while maintaining security and data  
+integrity.
+
+In summary, Hyperledger Fabric meets the needs of real estate transactions by providing privacy,  
+scalability, automation, and compliance with legal requirements.
+
+I recommend Hyperledger Fabric over Ethereum and Polygon for real estate transactions because:
+
+- **Privacy and Permissioned Access**: Real estate deals often require confidentiality and compliance  
+  with regulations. Hyperledger Fabric’s permissioned model ensures only authorized parties can access  
+  sensitive data, unlike public blockchains.
+
+* **Regulatory Compliance**: Fabric’s architecture supports private channels and granular access control,  
+  making it easier to meet legal and regulatory requirements common in property transactions.
+
+* **Enterprise Integration**: Fabric is designed for enterprise use, allowing seamless integration with  
+  existing systems used by agencies, banks, and government registries.
+
+* **Scalability and Performance**: It offers high throughput and low latency, which is important for  
+  handling many transactions efficiently.
+
+* **Customizability**: Its modular design lets you tailor the network to specific business needs,  
+  including consensus mechanisms and smart contract logic.
+
+In contrast, Ethereum and Polygon are public blockchains, which may pose privacy concerns and regulatory  
+challenges for sensitive real estate data. While they excel in transparency and tokenization, Hyperledger  
+Fabric better addresses the unique needs of real estate transactions.
+
+#### Further Reading: Hyperledger Fabric
+
+- [Hyperledger Fabric Official Documentation](https://hyperledger-fabric.readthedocs.io/en/latest/)
+
+  - Comprehensive technical docs, tutorials, and architecture details.
+    (in progress, current state: "The order-execute architecture can be found"
+    at https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
+
+- [Hyperledger Fabric Overview (Linux Foundation)](https://www.hyperledger.org/use/fabric)
+
+  - General overview, use cases, and project information. (TBR)
+
+- [Getting Started with Hyperledger Fabric (IBM Developer)](https://developer.ibm.com/tutorials/hyperledger-fabric-on-ibm-blockchain-platform/)
+
+  - Beginner-friendly introduction and practical guides. (TBR)
+
+- [Hyperledger Fabric GitHub Repository](https://github.com/hyperledger/fabric)
+
+  - Source code, releases, and developer discussions. (TBR)
+
+- [Hyperledger Fabric Tutorials (YouTube)](https://www.youtube.com/results?search_query=hyperledger+fabric+tutorial)
+  - Video walkthroughs for setup, smart contracts, and network configuration. (TBR)
+
+**Key information:**
+
+"For enterprise use, we need to consider the following requirements:
+
+- Participants must be identified/identifiable
+- Networks need to be permissioned
+- High transaction throughput performance
+- Low latency of transaction confirmation
+- Privacy and confidentiality of transactions  
+  and data pertaining to business transactions
+
+While many early blockchain platforms are currently  
+being adapted for enterprise use, Hyperledger Fabric  
+has been designed for enterprise use from the outset.
+
+Fabric is the first distributed ledger platform to support  
+smart contracts authored in general-purpose programming languages  
+such as Java, Go, and Node.js, rather than constrained domain-specific  
+languages (DSL). This means that most enterprises already have the skill  
+set needed to develop smart contracts, and no additional training to  
+learn a new language or DSL is needed.
+
+One of the most important of the platform’s differentiators is its  
+support for pluggable consensus protocols that enable the platform to  
+be more effectively customized to fit particular use cases and trust models.  
+For instance, when deployed within a single enterprise, or operated by a trusted  
+authority, fully byzantine fault tolerant consensus might be considered unnecessary  
+and an excessive drag on performance and throughput. In situations such as that,  
+a crash fault-tolerant (CFT) consensus protocol might be more than adequate whereas,  
+in a multi-party, decentralized use case, a more traditional byzantine fault tolerant  
+(BFT) consensus protocol might be required.
+
+Fabric can leverage consensus protocols that do not require a native cryptocurrency to  
+incent costly mining or to fuel smart contract execution. Avoidance of a cryptocurrency  
+reduces some significant risk/attack vectors, and absence of cryptographic mining operations  
+means that the platform can be deployed with roughly the same operational cost as any  
+other distributed system."
+
+[Source](https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
