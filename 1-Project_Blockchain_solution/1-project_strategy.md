@@ -388,24 +388,22 @@ Fabric better addresses the unique needs of real estate transactions.
 
 - [Hyperledger Fabric Official Documentation](https://hyperledger-fabric.readthedocs.io/en/latest/)
 
-  - Comprehensive technical docs, tutorials, and architecture details.
-    (in progress, current state: "The order-execute architecture can be found"
-    at https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
+  - Comprehensive technical docs, tutorials, and architecture details. (Done)
 
 - [Hyperledger Fabric Overview (Linux Foundation)](https://www.hyperledger.org/use/fabric)
 
-  - General overview, use cases, and project information. (TBR)
+  - General overview, use cases, and project information. (Done)
 
-- [Getting Started with Hyperledger Fabric (IBM Developer)](https://developer.ibm.com/tutorials/hyperledger-fabric-on-ibm-blockchain-platform/)
+- [Getting Started with Hyperledger Fabric (IBM Developer)](https://developer.ibm.com/learningpaths/get-started-blockchain/hyperledger-fabric/)
 
-  - Beginner-friendly introduction and practical guides. (TBR)
+  - Beginner-friendly introduction and practical guides. (Done, contains a good schema of the architecture of the network)
 
 - [Hyperledger Fabric GitHub Repository](https://github.com/hyperledger/fabric)
 
-  - Source code, releases, and developer discussions. (TBR)
+  - Source code, releases, and developer discussions. (Done)
 
 - [Hyperledger Fabric Tutorials (YouTube)](https://www.youtube.com/results?search_query=hyperledger+fabric+tutorial)
-  - Video walkthroughs for setup, smart contracts, and network configuration. (TBR)
+  - Video walkthroughs for setup, smart contracts, and network configuration. (Done)
 
 **Key information:**
 
@@ -433,10 +431,10 @@ One of the most important of the platform’s differentiators is its
 support for pluggable consensus protocols that enable the platform to  
 be more effectively customized to fit particular use cases and trust models.  
 For instance, when deployed within a single enterprise, or operated by a trusted  
-authority, fully byzantine fault tolerant consensus might be considered unnecessary  
+authority, fully Byzantine fault-tolerant consensus might be considered unnecessary  
 and an excessive drag on performance and throughput. In situations such as that,  
 a crash fault-tolerant (CFT) consensus protocol might be more than adequate whereas,  
-in a multi-party, decentralized use case, a more traditional byzantine fault tolerant  
+in a multi-party, decentralized use case, a more traditional Byzantine fault-tolerant  
 (BFT) consensus protocol might be required.
 
 Fabric can leverage consensus protocols that do not require a native cryptocurrency to  
@@ -446,3 +444,142 @@ means that the platform can be deployed with roughly the same operational cost a
 other distributed system."
 
 [Source](https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
+
+## Provide a high-level architecture diagram outlining the core components of your proposed blockchain solution.
+
+In this particular example, the high level architecture diagram would be for the Hyperledger Fabric.
+
+For a high-level architecture diagram of Hyperledger Fabric in a real estate use case, you should\
+include these core components:
+
+**Client Applications**: Used by buyers, sellers, agents, banks, and registries to interact with the network.\
+**Peers**: Nodes that host ledgers and smart contracts (chaincode), validate transactions, and endorse proposals.\
+**Ordering Service**: Orders transactions into blocks and ensures consensus across the network.\
+**Certificate Authority (CA)**: Manages identities and issues digital certificates for network participants.\
+**Channels**: Private subnets for confidential transactions between specific parties (e.g., buyer/seller,\
+bank/registry).\
+**Smart Contracts (Chaincode)**: Automate business logic (escrow, title transfer, payments).\
+**Ledger**: Distributed database storing all transaction records.
+
+```text
++-------------------+      +-------------------+      +-------------------+
+|   Client Apps     |<---->| Peers (Endorsers) |<---->|  Ordering Service |
++-------------------+      +-------------------+      +-------------------+
+         |                        |                          |
+         v                        v                          v
++-------------------+      +-------------------+      +-------------------+
+| Certificate Auth. |      |   Channels        |      |   Ledger          |
++-------------------+      +-------------------+      +-------------------+
+         |                        |                          |
+         v                        v                          v
++-------------------+      +-------------------+      +-------------------+
+|  Smart Contracts  |      |   Real Estate     |      |   Registry/Bank   |
++-------------------+      |   Transactions    |      +-------------------+
+                           +-------------------+
+```
+
+Hyperledger Fabric Protocol for Real Estate Transactions
+Core Components and Their Functions
+
+1. Client Applications
+
+- Function: Entry points for all participants (buyers, sellers, agents, banks, government registries)
+- Real Estate Role: Web or mobile apps where users initiate property transactions, submit documents, make payments, and track transaction status
+- Example: A buyer uses a mobile app to make an offer on a property, which triggers a smart contract
+
+2. Peers (Endorsers)
+
+- Function: Network nodes that store the ledger, execute chaincode (smart contracts), and validate transactions
+- Real Estate Role: Maintain copies of property records, execute business logic for transfers, and endorse transaction proposals
+- Example: When a property sale is initiated, endorsing peers verify the seller owns the property and execute the transfer logic.
+
+3. Ordering Service
+
+- Function: Collects endorsed transactions, orders them chronologically, and packages them into blocks
+- Real Estate Role: Ensures all property transactions are processed in the correct sequence to prevent double-spending or conflicting ownership claims
+- Example: Prevents two buyers from simultaneously purchasing the same property.
+
+4. Certificate Authority (CA)
+
+- Function: Issues digital identities and manages authentication for network participants
+- Real Estate Role: Verifies the identity of buyers, sellers, agents, banks, and government entities
+- Example: Ensures only licensed real estate agents can list properties and only verified banks can process mortgages.
+
+5. Channels
+
+- Function: Private communication subnets that isolate transactions between specific parties
+- Real Estate Role: Enable confidential negotiations and transactions between relevant parties only
+- Example: A private channel between buyer, seller, and bank for mortgage details, separate from the public property listing.
+
+6. Smart Contracts (Chaincode)
+
+- Function: Programmable business logic that automates transaction processes
+- Real Estate Role: Automate escrow, title transfers, payment releases, and compliance checks
+- Example: Automatically release funds to seller when all conditions (inspection, title verification) are met.
+
+7. Ledger
+
+- Function: Immutable distributed database storing all transaction history
+- Real Estate Role: Maintains complete property ownership history, transaction records, and legal documents
+- Example: Permanent record of all past owners, liens, and transfers for each property.
+
+**Transaction Flow in Real Estate Context**
+
+### Step 1: Transaction Initiation
+
+- Buyer submits purchase offer through client application
+- Smart contract validates buyer's identity and financial pre-approval
+
+### Step 2: Proposal and Endorsement
+
+- Transaction proposal sent to endorsing peers
+- Peers execute chaincode to verify:
+  Seller owns the property
+  Property has clear title
+  Buyer meets financing requirements
+  All legal requirements are satisfied
+
+### Step 3: Consensus and Ordering
+
+- Endorsed transaction sent to ordering service
+- Orders transaction with other network transactions
+- Creates new block containing the property transfer
+
+### Step 4: Validation and Commitment
+
+- Block distributed to all peers in the network
+- Peers validate the block and update their ledgers
+- Property ownership officially transferred
+
+### Step 5: Notification and Completion
+
+- All parties receive confirmation through client applications
+- Government registries automatically updated
+- Funds released from escrow to seller
+
+**Benefits for Real Estate**
+
+- Transparency: All authorized parties can view transaction status and history
+- Speed: Automated processes reduce closing time from weeks to days
+- Cost Reduction: Fewer intermediaries and automated processes lower fees
+- Security: Cryptographic protection prevents fraud and tampering
+- Compliance: Built-in regulatory checks ensure legal requirements are met
+- Immutability: Permanent record prevents disputes over ownership history
+- This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
+
+- References to read about the architecture diagram:
+  [Hyperledger Fabric Official Architecture Overview](https://hyperledger-fabric.readthedocs.io/en/latest/architecture.html) (Done, only for reference)
+
+  [Hyperledger Architecture](https://www.geeksforgeeks.org/computer-networks/hyperledger-architecture/) (Done)
+
+  [Hyperledger Fabric in Blockchain](https://www.geeksforgeeks.org/computer-networks/hyperledger-fabric-in-blockchain/) (Done, contain a good diagram)
+
+  [Hyperledger Fabric — Part 1 — Components and Architecture](https://blog.clairvoyantsoft.com/hyperledger-fabric-components-and-architecture-b874b36c4af5) (Done, contains some good diagrams)
+
+  [Hyperledger Fabric — Part 2 — Transaction Flow](https://blog.clairvoyantsoft.com/hyperledger-fabric-transaction-flow-c6bcc2142b5a) (Done)
+
+  [Blockchain for Enterprise – Hyperledger Fabric – Transaction Flow](https://notepub.io/notes/blockchain-technology/blockchain-for-enterprise/how-does-the-transaction-flow-happen-in-hyperledger-fabric/) (Done)
+
+**Task**:
+
+1. Draw an architecture sequence diagram for this solution using Draw.io (in progress)
