@@ -388,24 +388,22 @@ Fabric better addresses the unique needs of real estate transactions.
 
 - [Hyperledger Fabric Official Documentation](https://hyperledger-fabric.readthedocs.io/en/latest/)
 
-  - Comprehensive technical docs, tutorials, and architecture details.
-    (in progress, current state: "The order-execute architecture can be found"
-    at https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
+  - Comprehensive technical docs, tutorials, and architecture details. (Done)
 
 - [Hyperledger Fabric Overview (Linux Foundation)](https://www.hyperledger.org/use/fabric)
 
-  - General overview, use cases, and project information. (TBR)
+  - General overview, use cases, and project information. (Done)
 
-- [Getting Started with Hyperledger Fabric (IBM Developer)](https://developer.ibm.com/tutorials/hyperledger-fabric-on-ibm-blockchain-platform/)
+- [Getting Started with Hyperledger Fabric (IBM Developer)](https://developer.ibm.com/learningpaths/get-started-blockchain/hyperledger-fabric/)
 
-  - Beginner-friendly introduction and practical guides. (TBR)
+  - Beginner-friendly introduction and practical guides. (Done, contains a good schema of the architecture of the network)
 
 - [Hyperledger Fabric GitHub Repository](https://github.com/hyperledger/fabric)
 
-  - Source code, releases, and developer discussions. (TBR)
+  - Source code, releases, and developer discussions. (Done)
 
 - [Hyperledger Fabric Tutorials (YouTube)](https://www.youtube.com/results?search_query=hyperledger+fabric+tutorial)
-  - Video walkthroughs for setup, smart contracts, and network configuration. (TBR)
+  - Video walkthroughs for setup, smart contracts, and network configuration. (Done)
 
 **Key information:**
 
@@ -433,10 +431,10 @@ One of the most important of the platform’s differentiators is its
 support for pluggable consensus protocols that enable the platform to  
 be more effectively customized to fit particular use cases and trust models.  
 For instance, when deployed within a single enterprise, or operated by a trusted  
-authority, fully byzantine fault tolerant consensus might be considered unnecessary  
+authority, fully Byzantine fault-tolerant consensus might be considered unnecessary  
 and an excessive drag on performance and throughput. In situations such as that,  
 a crash fault-tolerant (CFT) consensus protocol might be more than adequate whereas,  
-in a multi-party, decentralized use case, a more traditional byzantine fault tolerant  
+in a multi-party, decentralized use case, a more traditional Byzantine fault-tolerant  
 (BFT) consensus protocol might be required.
 
 Fabric can leverage consensus protocols that do not require a native cryptocurrency to  
