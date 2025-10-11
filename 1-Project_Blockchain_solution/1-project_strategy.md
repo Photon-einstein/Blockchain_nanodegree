@@ -444,3 +444,47 @@ means that the platform can be deployed with roughly the same operational cost a
 other distributed system."
 
 [Source](https://hyperledger-fabric.readthedocs.io/en/latest/whatis.html)
+
+#### Provide a high-level architecture diagram outlining the core components of your proposed blockchain solution.
+
+In this particular example, the high level architecture diagram would be for the Hyperledger Fabric.
+
+For a high-level architecture diagram of Hyperledger Fabric in a real estate use case, you should\
+include these core components:
+
+**Client Applications**: Used by buyers, sellers, agents, banks, and registries to interact with the network.\
+**Peers**: Nodes that host ledgers and smart contracts (chaincode), validate transactions, and endorse proposals.\
+**Ordering Service**: Orders transactions into blocks and ensures consensus across the network.\
+**Certificate Authority (CA)**: Manages identities and issues digital certificates for network participants.\
+**Channels**: Private subnets for confidential transactions between specific parties (e.g., buyer/seller,\
+bank/registry).\
+**Smart Contracts (Chaincode)**: Automate business logic (escrow, title transfer, payments).\
+**Ledger**: Distributed database storing all transaction records.
+
+```text
++-------------------+      +-------------------+      +-------------------+
+|   Client Apps     |<---->|      Peers        |<---->|   Ordering Service |
++-------------------+      +-------------------+      +-------------------+
+         |                        |                          |
+         v                        v                          v
++-------------------+      +-------------------+      +-------------------+
+| Certificate Auth. |      |   Channels        |      |   Ledger          |
++-------------------+      +-------------------+      +-------------------+
+         |                        |                          |
+         v                        v                          v
++-------------------+      +-------------------+      +-------------------+
+|  Smart Contracts  |      |   Real Estate     |      |   Registry/Bank   |
++-------------------+      |   Transactions    |      +-------------------+
+                           +-------------------+
+```
+
+- References to read about the architecture diagram:
+  [Hyperledger Fabric Official Architecture Overview](https://hyperledger-fabric.readthedocs.io/en/latest/architecture.html) (Done, only for reference)
+
+  [Hyperledger Architecture](https://www.geeksforgeeks.org/computer-networks/hyperledger-architecture/) (Done)
+
+  [Hyperledger Fabric in Blockchain](https://www.geeksforgeeks.org/computer-networks/hyperledger-fabric-in-blockchain/) (Done, contain a good diagram)
+
+  [Hyperledger Fabric — Part 1 — Components and Architecture](https://blog.clairvoyantsoft.com/hyperledger-fabric-components-and-architecture-b874b36c4af5) (Done, contains some good diagrams)
+
+  [Hyperledger Fabric — Part 2 — Transaction Flow](https://blog.clairvoyantsoft.com/hyperledger-fabric-transaction-flow-c6bcc2142b5a) (in progress)
