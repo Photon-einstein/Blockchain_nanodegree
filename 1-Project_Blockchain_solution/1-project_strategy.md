@@ -487,4 +487,6 @@ bank/registry).\
 
   [Hyperledger Fabric — Part 1 — Components and Architecture](https://blog.clairvoyantsoft.com/hyperledger-fabric-components-and-architecture-b874b36c4af5) (Done, contains some good diagrams)
 
-  [Hyperledger Fabric — Part 2 — Transaction Flow](https://blog.clairvoyantsoft.com/hyperledger-fabric-transaction-flow-c6bcc2142b5a) (in progress)
+  [Hyperledger Fabric — Part 2 — Transaction Flow](https://blog.clairvoyantsoft.com/hyperledger-fabric-transaction-flow-c6bcc2142b5a) (Done)
+
+  [Blockchain for Enterprise – Hyperledger Fabric – Transaction Flow](https://notepub.io/notes/blockchain-technology/blockchain-for-enterprise/how-does-the-transaction-flow-happen-in-hyperledger-fabric/) (in progress, State: "Step 1/7: Client Proposed Transaction")
