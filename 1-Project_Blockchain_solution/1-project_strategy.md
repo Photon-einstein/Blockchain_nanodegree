@@ -478,8 +478,8 @@ bank/registry).\
                            +-------------------+
 ```
 
-Hyperledger Fabric Protocol for Real Estate Transactions
-Core Components and Their Functions
+### Hyperledger Fabric Protocol for Real Estate Transactions
+#### Core Components and Their Functions
 
 1. Client Applications
 
