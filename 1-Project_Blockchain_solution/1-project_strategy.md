@@ -565,7 +565,7 @@ bank/registry).\
 - Security: Cryptographic protection prevents fraud and tampering
 - Compliance: Built-in regulatory checks ensure legal requirements are met
 - Immutability: Permanent record prevents disputes over ownership history
-- This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
+This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
 
 - References to read about the architecture diagram:
   [Hyperledger Fabric Official Architecture Overview](https://hyperledger-fabric.readthedocs.io/en/latest/architecture.html) (Done, only for reference)
