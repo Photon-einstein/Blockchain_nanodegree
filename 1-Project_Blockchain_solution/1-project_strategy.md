@@ -534,10 +534,10 @@ bank/registry).\
 
 - Transaction proposal sent to endorsing peers
 - Peers execute chaincode to verify:
-  Seller owns the property
-  Property has clear title
-  Buyer meets financing requirements
-  All legal requirements are satisfied
+  - Seller owns the property
+  - Property has clear title
+  - Buyer meets financing requirements
+  - All legal requirements are satisfied
 
 ### Step 3: Consensus and Ordering
 
