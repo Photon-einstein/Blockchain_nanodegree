@@ -478,8 +478,9 @@ bank/registry).\
                            +-------------------+
 ```
 
-Hyperledger Fabric Protocol for Real Estate Transactions
-Core Components and Their Functions
+### Hyperledger Fabric Protocol for Real Estate Transactions
+
+#### Core Components and Their Functions
 
 1. Client Applications
 
@@ -534,10 +535,10 @@ Core Components and Their Functions
 
 - Transaction proposal sent to endorsing peers
 - Peers execute chaincode to verify:
-  Seller owns the property
-  Property has clear title
-  Buyer meets financing requirements
-  All legal requirements are satisfied
+  - Seller owns the property
+  - Property has clear title
+  - Buyer meets financing requirements
+  - All legal requirements are satisfied
 
 ### Step 3: Consensus and Ordering
 
@@ -565,7 +566,7 @@ Core Components and Their Functions
 - Security: Cryptographic protection prevents fraud and tampering
 - Compliance: Built-in regulatory checks ensure legal requirements are met
 - Immutability: Permanent record prevents disputes over ownership history
-- This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
+  This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
 
 - References to read about the architecture diagram:
   [Hyperledger Fabric Official Architecture Overview](https://hyperledger-fabric.readthedocs.io/en/latest/architecture.html) (Done, only for reference)
