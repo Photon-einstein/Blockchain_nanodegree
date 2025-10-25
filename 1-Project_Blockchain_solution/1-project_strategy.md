@@ -79,7 +79,7 @@ Identify the specific problems this use case intends to solve. Research existing
 non-blockchain solutions currently used. Explain how a blockchain-based implementation could  
 provide improvements.
 
-### **1. Use Case Selection and Research (in progress)**
+### **1. Use Case Selection and Research (Done)**
 
 The specific problem that this blockchain solution is trying to solve are Real Estate Transactions.  
 Currently, the real state transaction are in many cases slow, paper heavy, prone to fraud and expensive.  
@@ -88,7 +88,7 @@ administrative charges. This costs all added make up for a significant percentag
 making the process costly for buyers and sellers.
 Blockchain solution aim to reduce some of these costs by automating processes and minimizing intermediaries.
 
-1. Research and explain non-blockchain solutions currently used (in progress).
+1. Research and explain non-blockchain solutions currently used (Done).
 
 #### **Multiple Listing Service (MLS)**
 
@@ -279,7 +279,7 @@ Records may be fragmented across different jurisdictions.
 Risk of fraud or tampering if security is weak.  
 Centralized control can lead to bureaucratic delays and limited accessibility.
 
-### **2. Explain how a blockchain-based implementation could provide improvements (TBD)**
+### **2. Explain how a blockchain-based implementation could provide improvements (Done)**
 
 A blockchain-based implementation could provide several improvements to real estate transactions:
 
@@ -568,6 +568,8 @@ bank/registry).\
 - Immutability: Permanent record prevents disputes over ownership history
   This architecture provides a secure, efficient, and transparent framework for managing complex real estate transactions while maintaining privacy through permissioned access and private channels.
 
+### References used in this section:
+
 - References to read about the architecture diagram:
   [Hyperledger Fabric Official Architecture Overview](https://hyperledger-fabric.readthedocs.io/en/latest/architecture.html) (Done, only for reference)
 
@@ -583,4 +585,255 @@ bank/registry).\
 
 **Task**:
 
-1. Draw an architecture sequence diagram for this solution using Draw.io (in progress)
+1.  Draw an architecture sequence diagram for this solution using Draw.io (Done, diagram already in the figures folder)
+
+2.  Discuss potential implementation challenges such as scalability, user experience, regulatory  
+    requirements, adoption incentives, and other relevant factors. It is a nice-to-have to discuss  
+    how these challenges could be addressed and what alternatives could complement the blockchain  
+    aspects. (Done)
+
+    ### **3. Challenges and Considerations**
+
+    #### **Implementation Challenges**
+
+    **1. Scalability Challenges**
+
+    - **Challenge**: While Hyperledger Fabric offers better performance than public blockchains, handling thousands of simultaneous real estate transactions across multiple regions could strain network resources.
+    - **Potential Solutions**:
+      - Implement multiple channels for different geographic regions
+      - Use horizontal scaling by adding more peer nodes
+      - Optimize chaincode for better performance
+      - Consider hybrid architectures with off-chain storage for large documents
+
+    **2. User Experience (UX) Challenges**
+
+    - **Challenge**: Real estate professionals and consumers may find blockchain interfaces complex compared to traditional systems.
+    - **Potential Solutions**:
+      - Develop intuitive web and mobile applications that hide blockchain complexity
+      - Provide comprehensive training programs for real estate professionals
+      - Create user-friendly dashboards for transaction tracking
+      - Implement gradual migration from existing systems rather than complete replacement
+
+    **3. Regulatory Requirements**
+
+    - **Challenge**: Real estate regulations vary significantly across jurisdictions and may not recognize blockchain-based transactions.
+    - **Potential Solutions**:
+      - Work with regulatory bodies to establish blockchain-friendly legislation
+      - Ensure compliance with existing data protection laws (GDPR, CCPA)
+      - Implement audit trails that satisfy regulatory requirements
+      - Create hybrid systems that interface with existing legal frameworks
+
+    **4. Adoption Incentives**
+
+    - **Challenge**: Convincing established real estate industry players to adopt new technology when existing systems work.
+    - **Potential Solutions**:
+      - Demonstrate clear ROI through reduced transaction costs and faster processing
+      - Pilot programs with progressive real estate agencies
+      - Government incentives for digital transformation
+      - Industry consortium approach to share implementation costs
+
+    **5. Integration with Legacy Systems**
+
+    - **Challenge**: Existing MLS (Multiple Listing Service), title companies, and government registries use legacy systems that may not easily integrate.
+    - **Potential Solutions**:
+      - Develop API gateways for seamless integration
+      - Gradual migration strategy rather than complete replacement
+      - Use middleware solutions to bridge blockchain and traditional systems
+      - Partner with existing technology providers for smoother transitions
+
+    **6. Data Privacy and Security**
+
+    - **Challenge**: Balancing transparency benefits with privacy requirements for sensitive financial and personal information.
+    - **Potential Solutions**:
+      - Use private channels for sensitive negotiations
+      - Implement zero-knowledge proofs for verification without data exposure
+      - Role-based access controls for different participant types
+      - Regular security audits and penetration testing
+
+    #### **Complementary Technologies**
+
+    **1. IPFS (InterPlanetary File System)**
+
+    - Store large documents (contracts, inspection reports, photos) off-chain while maintaining hash references on the blockchain
+    - Reduces blockchain storage costs and improves performance
+
+    **2. Oracle Services (e.g., Chainlink)**
+
+    - Connect blockchain with external data sources like property valuation services, credit scores, and market data
+    - Enable smart contracts to access real-world information for automated decision-making
+
+    **3. Digital Identity Solutions**
+
+    - Integration with government digital ID systems for seamless user verification
+    - Reduce KYC (Know Your Customer) overhead and improve user onboarding
+
+    **4. AI and Machine Learning**
+
+    - Property valuation algorithms for automated appraisals
+    - Fraud detection systems to identify suspicious transactions
+    - Predictive analytics for market trends and risk assessment
+
+    **5. IoT Integration**
+
+    - Smart locks and sensors for property inspections
+    - Automated property condition monitoring
+    - Integration with smart home systems for enhanced property data
+
+    #### **Risk Mitigation Strategies**
+
+    - **Phased Implementation**: Start with pilot programs in specific regions or property types
+    - **Fallback Systems**: Maintain traditional backup processes during transition periods
+    - **Insurance Coverage**: Develop blockchain-specific insurance products for transaction protection
+    - **Regular Updates**: Establish governance mechanisms for platform upgrades and security patches
+    - **Multi-stakeholder Governance**: Create industry consortiums to guide development and adoption
+
+    These challenges, while significant, can be addressed through careful planning, stakeholder collaboration, and technological innovation. The key is to implement blockchain solutions gradually while maintaining compatibility with existing systems and regulatory frameworks.
+
+3.  Choose a use case that could benefit from a blockchain solution.  
+     Identify the specific problems this use case intends to solve. Research existing  
+     non-blockchain solutions currently used. Explain how a blockchain-based implementation could  
+     provide improvements.
+
+    ### 1- Use Case
+
+    The specific problem that this blockchain solution is trying to solve are Real Estate Transactions.
+
+    ### 2- Specific problem trying to solve: (Done)
+
+    Currently, the real state transaction are in many cases slow, paper heavy, prone to fraud and expensive.
+    Cost in traditional systems span from agent commissions, legal fees, title insurance, taxes and several
+    administrative charges. This costs all added make up for a significant percentage of the property's value,
+    making the process costly for buyers and sellers.
+
+    ### 3- Research existing non-blockchain solutions currently used. (Done)
+
+    1. The Multiple Listing Service (MLS) is a centralized database where real estates
+       agents and brokers list properties for sale. It allows agents to share information  
+       about properties and helps buyers find available homes.
+    2. Escrow is a financial arrangement where a neutral third party (the escrow agent) holds
+       funds and documents on behalf of the buyer and seller until all conditions of the
+       transaction are met.
+    3. Title companies are organizations that verify the legal ownership of a property  
+       and ensure there are no claims, liens, or disputes before a sale. They also  
+       provide title insurance to protect buyers and lenders from future ownership issues.
+    4. Notaries are authorized officials who verify the identity of parties, witness signatures,
+       and certify documents. Legal professionals (lawyers, solicitors provide legal advice,
+       draft contracts, and ensure compliance with laws).
+    5. Banks and mortgage lenders are financial institutions that provide loans to buyers for
+       purchasing real estate. They assess creditworthiness, offer financing options, and manage
+       payments over the life of the loan.
+    6. Government registries are official databases maintained by local or national authorities
+       to record property ownership, transfers, and related legal documents. They ensure legal
+       recognition and public record of property rights.
+
+4.  Explain how a blockchain-based implementation could provide improvements (Done)
+
+    A blockchain-based implementation could provide several improvements to real estate transactions:
+
+    - **Transparency**: All transaction records are stored on a public or permissioned ledger,  
+      making ownership history and transfers easily auditable and reducing fraud.
+
+    * **Efficiency**: Smart contracts automate processes like payments, escrow, and title transfers,  
+      reducing paperwork and speeding up transactions.
+
+    * **Cost Reduction**: By minimizing intermediaries (agents, escrow, title companies), blockchain  
+      can lower fees and administrative costs.
+
+    * **Security**: Cryptographic verification and decentralized storage protect against tampering  
+      and unauthorized changes.
+
+    * **Accessibility**: Parties can access records and verify ownership instantly, even across  
+      jurisdictions.
+
+    * **Immutability**: Once recorded, transaction data cannot be altered, ensuring a reliable and  
+      permanent record.
+
+5.  Proposed Solution and Architecture
+
+    Analysis of Potential Blockchain Platforms
+
+    **1. Ethereum**
+
+    - **Consensus Approach:** Proof of Stake (PoS)
+    - **Technical Attributes:** Smart contracts, public ledger, tokenization standards (ERC-721, ERC-1155), large developer ecosystem
+    - **Suitability:** Good for transparent ownership records and automation, but has scalability and cost concerns.
+
+    **2. Hyperledger Fabric**
+
+    - **Consensus Approach:** Pluggable consensus (e.g., Raft, Kafka)
+    - **Technical Attributes:** Permissioned blockchain, modular architecture, private channels, chaincode in Go/Java/Node.js, high throughput
+    - **Suitability:** Ideal for enterprise and government use cases requiring privacy and compliance.
+
+    **3. Polygon**
+
+    - **Consensus Approach:** Proof of Stake (PoS)
+    - **Technical Attributes:** Layer 2 scaling solution for Ethereum, fast and low-cost transactions, Ethereum-compatible smart contracts, interoperability bridges
+    - **Suitability:** Good for scalable, cost-effective applications such as high-volume property listings.
+
+    | Platform           | Consensus | Smart Contracts | Privacy | Scalability | Cost   | Suitability              |
+    | ------------------ | --------- | --------------- | ------- | ----------- | ------ | ------------------------ |
+    | Ethereum           | PoS       | Yes             | Public  | Medium      | Medium | Tokenization, automation |
+    | Hyperledger Fabric | Pluggable | Yes             | Private | High        | Low    | Enterprise, compliance   |
+    | Polygon            | PoS       | Yes             | Public  | High        | Low    | Scalable, low-cost apps  |
+
+    **Chosen Solution**:
+    Hyperledger Fabric
+
+6.  Technical implementation, explanation of core components of the architecture: (Done)
+
+    1.  Client Applications
+
+    - Function: Entry points for all participants (buyers, sellers, agents, banks, government registries)
+    - Real Estate Role: Web or mobile apps where users initiate property transactions, submit documents, make payments, and track transaction status
+    - Example: A buyer uses a mobile app to make an offer on a property, which triggers a smart contract
+
+    2. Fabric SDK
+
+    - Function: Acts as a bridge between client applications and the Hyperledger Fabric network, providing APIs to submit transactions, query the ledger, and manage identities.
+    - Real Estate Role: Enables developers to build user-friendly web or mobile apps for buyers, sellers, agents, and banks to interact with the blockchain seamlessly.
+    - Example: A buyer uses a mobile app (built with the Fabric SDK) to submit an offer on a property, which triggers a smart contract to validate the transaction and update the ledger.
+
+    3.  Peers (Endorsers)
+
+    - Function: Network nodes that store the ledger, execute chaincode (smart contracts), and validate transactions
+    - Real Estate Role: Maintain copies of property records, execute business logic for transfers, and endorse transaction proposals
+    - Example: When a property sale is initiated, endorsing peers verify the seller owns the property and execute the transfer logic.
+
+    4. Ordering Service
+
+    - Function: Collects endorsed transactions, orders them chronologically, and packages them into blocks
+    - Real Estate Role: Ensures all property transactions are processed in the correct sequence to prevent double-spending or conflicting ownership claims.
+    - Example: Prevents two buyers from simultaneously purchasing the same property.
+
+    5. Certificate Authority (CA)
+
+    - Function: Issues digital identities and manages authentication for network participants
+    - Real Estate Role: Verifies the identity of buyers, sellers, agents, banks, and government entities
+    - Example: Ensures only licensed real estate agents can list properties and only verified banks can process mortgages.
+
+    6. Channels
+
+    - Function: Private communication subnets that isolate transactions between specific parties.
+    - Real Estate Role: Enable confidential negotiations and transactions between relevant parties only.
+    - Example: A private channel between buyer, seller, and bank for mortgage details, separate from the public property listing.
+
+    7. Smart Contracts (Chaincode)
+
+    - Function: Programmable business logic that automates transaction processes.
+    - Real Estate Role: Automate escrow, title transfers, payment releases, and compliance checks.
+    - Example: Automatically release funds to seller when all conditions (inspection, title verification) are met.
+
+    8. Ledger
+
+    - Function: Immutable distributed database storing all transaction history.
+    - Real Estate Role: Maintains complete property ownership history, transaction records, and legal documents.
+    - Example: Permanent record of all past owners, liens, and transfers for each property.
+
+7.  Provide a high-level architecture diagram outlining the core components of your proposed blockchain solution. (Done)
+
+    - Walk through the user journey, demonstrating how they would interact with the solution. (During the video)
+
+8.  Discuss potential implementation challenges such as scalability, user experience, regulatory  
+    requirements, adoption incentives, and other relevant factors. It is a nice-to-have to discuss  
+    how these challenges could be addressed and what alternatives could complement the blockchain  
+    aspects. (in progress)
