@@ -51,7 +51,7 @@ Speak clearly and do not rush explanations.
 
 You can use tools like **Loom** or **Veed** to record your screen while presenting the slides
 
-[Loom](https://www.loom.com/)  
+[Loom](https://www.loom.com/) → it was chosen Loom
 [Veed](https://www.veed.io/)
 
 Export the video file from your software in a common video format like .mp4 or .mov.  
@@ -837,3 +837,65 @@ bank/registry).\
     requirements, adoption incentives, and other relevant factors. It is a nice-to-have to discuss  
     how these challenges could be addressed and what alternatives could complement the blockchain  
     aspects. (in progress)
+
+    **Scalability Challenges**
+
+    - Challenge: Hyperledger Fabric, while scalable, may face performance bottlenecks when handling thousands of simultaneous real estate transactions across multiple regions. This could strain network resources, especially with complex smart contracts.
+
+    * Potential Solutions:
+      - Implement multiple channels to segment transactions by geographic regions or transaction types.
+      - Use horizontal scaling by adding more peer nodes to distribute the workload.
+      - Optimize chaincode logic to reduce execution time and improve efficiency.
+      - Consider off-chain storage (e.g., IPFS) for large documents like property deeds and inspection reports, reducing on-chain data load.
+
+    **User Experience (UX) Challenges**
+
+    - Challenge: Blockchain systems can be complex for non-technical users, such as real estate agents, buyers, and sellers. Poorly designed interfaces may hinder adoption.
+
+    * Potential Solutions:
+      - Develop intuitive web and mobile applications that abstract blockchain complexity from users.
+      - Provide training programs for real estate professionals to familiarize them with the new system.
+      - Create user-friendly dashboards for transaction tracking and status updates.
+      - Implement a gradual migration strategy, allowing users to transition from traditional systems to blockchain-based systems over time.
+
+    **Regulatory Requirements**
+
+    - Challenge: Real estate regulations vary significantly across jurisdictions, and blockchain-based transactions may not yet be legally recognized in some regions.
+
+    * Potential Solutions:
+
+      - Collaborate with regulatory bodies to establish blockchain-friendly policies and frameworks.
+      - Ensure compliance with data protection laws (e.g., GDPR, CCPA) by using private channels and role-based access controls.
+      - Implement audit trails to provide regulators with transparent and immutable transaction records.
+      - Develop hybrid systems that interface with existing legal frameworks, ensuring compatibility with current regulations.
+
+      **Adoption Incentives**
+
+    - Challenge: Convincing established real estate industry players to adopt blockchain technology can be difficult, especially when existing systems are functional.
+
+    * Potential Solutions:
+
+      - Demonstrate clear ROI by showcasing reduced transaction costs, faster processing times, and enhanced security.
+      - Launch pilot programs with progressive real estate agencies to prove the system’s value.
+      - Advocate for government incentives to encourage digital transformation in the real estate sector.
+      - Use an industry consortium approach to share implementation costs and foster collaboration among stakeholders.
+
+      **Integration with Legacy Systems**
+
+      Challenge: Existing systems like MLS (Multiple Listing Service), title companies, and government registries rely on legacy technology, making integration with blockchain networks challenging.
+
+      - Potential Solutions:
+        - Develop API gateways to enable seamless communication between blockchain and legacy systems.
+        - Use middleware solutions to bridge blockchain with traditional databases.
+        - Implement a phased migration strategy, allowing legacy systems to coexist with blockchain during the transition period.
+        - Partner with existing technology providers to ensure smooth integration.
+
+      **Data Privacy and Security**
+
+      Challenge: Balancing the transparency benefits of blockchain with the need to protect sensitive financial and personal information is critical.
+
+      - Potential Solutions:
+        - Use private channels for sensitive transactions, ensuring only authorized parties can access the data.
+        - Implement zero-knowledge proofs to verify information without exposing underlying data.
+        - Enforce role-based access controls to limit data visibility based on user roles.
+        - Conduct regular security audits and penetration testing to identify and mitigate vulnerabilities.
