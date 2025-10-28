@@ -1,0 +1,23 @@
+// Task 1 - write a program that achieves the following sequence
+
+// log "A"
+// wait 2s
+// log "B"
+// wait 3s
+// log "C"
+// log "D" immediately
+
+const logB = () => {
+  console.log("B");
+};
+
+const logC = () => {
+  console.log("C");
+  console.log("D");
+};
+
+console.log("A");
+setTimeout(() => {
+  logB();
+  setTimeout(logC, 3000);
+}, 2000);
