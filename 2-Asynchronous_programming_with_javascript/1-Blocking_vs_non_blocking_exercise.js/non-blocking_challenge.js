@@ -17,5 +17,7 @@ const logC = () => {
 };
 
 console.log("A");
-setTimeout(logB, 2000);
-setTimeout(logC, 3000);
+setTimeout(() => {
+  logB();
+  setTimeout(logC, 3000);
+}, 2000);
