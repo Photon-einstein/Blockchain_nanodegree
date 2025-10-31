@@ -89,6 +89,3 @@ out/   # For static site generators or Next.js static export
 
 # Vscode related code
 *.vscode/
-
-# PDF files
-*.pdf
