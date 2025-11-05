@@ -16,7 +16,7 @@ new Promise((resolve, reject) => {
   resolve(data);
 })
   .then((data) => {
-    if (data.soucreId && data.soucreId !== null) {
+    if (data.sourceId && data.sourceId !== null) {
       return data;
     }
     // when the if statement returns something, there is no need for an else statement
