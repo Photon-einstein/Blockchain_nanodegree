@@ -10,6 +10,16 @@ fetch("http://localhost:3000")
   .then((json) => console.log(json))
   .catch((error) => console.log(error));
 
+fetch("http://localhost:3000/longexample")
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  .catch((error) => console.log(error));
+
+fetch("http://localhost:3000/nopage")
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  .catch((error) => console.log(error));
+
 // POST/PUT/PATCH/DELETE WITH OPTIONS
 
 fetch("http://localhost:3000", {

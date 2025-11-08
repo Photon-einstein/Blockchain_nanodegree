@@ -46,8 +46,8 @@ app.get("/longexample", (req, res) => {
 });
 
 // Long running request route
-app.get("/nonage", (req, res) => {
-  res.statusCode(400);
+app.get("/nopage", (req, res) => {
+  res.status(400).json({ error: "Bad Request" });
 });
 
 // listen for requests
