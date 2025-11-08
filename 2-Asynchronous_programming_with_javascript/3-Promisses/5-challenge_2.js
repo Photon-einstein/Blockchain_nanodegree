@@ -2,9 +2,10 @@
 
 // This promise chain catch clause always runs. Figure out why and get the console.log at the last then clause to run.
 const setCategory = (category, id) => {
-  // imagine we are assiging a category to an item...
+  // imagine we are assigning a category to an item...
   console.log("Category assigned!");
 };
+
 const data = {
   id: "KDF8D903N",
   intVal: 855,
@@ -27,6 +28,7 @@ new Promise((resolve, reject) => {
     if (intVal > 0 && intVal !== null) {
       const category = data.intVal.toString().split()[0];
       setCategory(category, data.id);
+      return data;
     } else {
       throw new Error("No integer value was provided");
     }
