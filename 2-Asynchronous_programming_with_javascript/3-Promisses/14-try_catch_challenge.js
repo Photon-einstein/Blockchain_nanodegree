@@ -107,8 +107,8 @@ endangeredAnimals.forEach((animal) => printAnimalMessage(animal));
 // Wrap the following code in a try catch block
 // Make sure the functionality stays the same
 
-animal1 = "vaquita";
-animal2 = "mouse";
+const animal1 = "vaquita";
+const animal2 = "mouse";
 
 const printAnimalFacts = (animal) => {
   try {
