@@ -88,7 +88,7 @@ printStatusMessage("extinct"); // failure case
 // Wrap the following code in a try catch block
 // Make sure the functionality stays the same
 
-endangeredAnimals = ["saola", "green turtle", "amur leopard", "deer"];
+const endangeredAnimals = ["saola", "green turtle", "amur leopard", "deer"];
 
 const printAnimalMessage = (animal) => {
   try {
