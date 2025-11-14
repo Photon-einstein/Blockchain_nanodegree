@@ -49,3 +49,4 @@ async function getAnswerToLife() {
 }
 
 getAnswerToLife();
+// getAnswerToLife().catch(err => console.log(err));
