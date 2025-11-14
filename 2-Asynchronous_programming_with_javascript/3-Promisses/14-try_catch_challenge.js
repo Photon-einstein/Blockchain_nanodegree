@@ -73,7 +73,7 @@ const printStatusMessage = (status) => {
   try {
     const animalsList = animalsByConservationStatus(status);
     let names = animalsList.map((animal) => animal.common_name);
-    message = `Animals listed as ${status} are: ${names.join(", ")}`;
+    const message = `Animals listed as ${status} are: ${names.join(", ")}`;
     console.log(message);
   } catch (err) {
     console.error(err.message);
