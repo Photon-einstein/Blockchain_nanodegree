@@ -153,12 +153,17 @@ const printAnimalRegions = async (status) => {
   try {
     const animalsList = await animalsByConservationStatus(status);
     const getAnimals = animalsList.map((animal) => {
-      return fetchAnimalByName(animal).catch((err) => console.log(err));
+      return fetchAnimalByName(animal).catch((err) => {
+        console.log(err);
+        return null;
+      });
     });
 
     const regions = await Promise.allSettled(getAnimals)
       .then((results) => {
-        const regions = results.map((result) => result.value.region);
+        const regions = results
+          .filter((result) => result.value && typeof result.value === "object")
+          .map((result) => result.value.region);
         return regions;
       })
       .catch((error) => console.log(error));
