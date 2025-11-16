@@ -1,3 +1,3 @@
 [submodule "cd13282-blockchain-with-solidity"]
-	path = cd13282-blockchain-with-solidity
+	path = 3-BlockChain_with_Solidity/1-Solidity_syntax/0-BlockchainWithSolidity
 	url = https://github.com/udacity/cd13282-blockchain-with-solidity.git
